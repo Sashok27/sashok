@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Service Worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+
+<!-- Mobile meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000"/>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Древние Русы против Ящеров</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="rusi_title.jpg" alt="Древние Русы сражаются с Ящерами" class="header-image">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 class="title">Древние Русы против Ящеров</h1>
+            <a href="veshkurtsev2.html" class="cta-button">Узнать правду</a>
+        </div>
+    </header>
+    
+    <main class="content">
+        <section class="article-section">
+            <article class="card">
+                <h2>Тайная война</h2>
+                <p>Археологические находки последних лет свидетельствуют о многовековом противостоянии древних русов с загадочной расой рептилоидов. Упоминания об этой войне встречаются в древних манускриптах, но были тщательно скрыты официальной историей.</p>
+                <a href="war.html" class="read-more">Читать далее →</a>
+            </article>
+            
+            <article class="card">
+                <h2>Артефакты</h2>
+                <p>Уникальные предметы, обнаруженные в раскопках, подтверждают теорию контактов с инопланетной цивилизацией ящеров. Среди находок - оружие со следами неизвестных технологий и странные артефакты из сплавов, не встречающихся в природе.</p>
+                <a href="veshkurtsev2.html" class="read-more">Читать далее →</a>
+            </article>
+            
+            <article class="card">
+                <h2>Запретные знания</h2>
+                <p>Древние русы владели секретами, которые сегодня кажутся фантастикой. Наши предки знали как использовать энергию земли, создавать психотронное оружие и противостоять влиянию рептилоидов.</p>
+                <a href="veshkurtsev2.html" class="read-more">Читать далее →</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2023 Историческое общество "Древние тайны"</p>
+        <p class="disclaimer">Внимание! Эти материалы могут противоречить официальной исторической науке</p>
+    </footer>
+</body>
+</html>
